@@ -20,5 +20,5 @@ github_username:  Jo941018
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src' , 'node_modules']
-images
+
 
