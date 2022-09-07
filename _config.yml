@@ -1,4 +1,5 @@
 # Site settings
+profilepic: '/images/my_profile_pictrure.jpg'
 title: Joel Sanchez
 description: Jekyll Theme Minimal Resume
 # baseurl: "" # the subpath of your site, e.g. /blog
