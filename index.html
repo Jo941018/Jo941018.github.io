@@ -1,102 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: 'Roboto Condensed', sans-serif; /* Cambia 'Roboto Condensed' por la fuente que prefieras */
-        }
-    </style>
-</head>
-
-<body class="bg-light"> 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="img/joel.jpeg" alt="Foto de perfil" class="profile-img">
-                <h1 class="mt-3 mb-2">JOEL SÁNCHEZ LEÓN</h1>
-                <p class="text-muted">FULLSTACK DEVELOPER & DATA SCIENTIST</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio de Joel Sánchez</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-KK7s28WaOr9w9b8Dk25SekTgWwylkWfP8s3zFm9vVSoN/HFUI74O8LU2Y4N/Wp3KEvRrXy25bJfzA8oZm1e3OQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Joel Sánchez León</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul
             </div>
-            <div class="col-md-8">
-                <div id="profile" class="section">
-                    <h2>Perfil Profesional</h2>
-                    <p>Manejo de base de datos. Gran rendimiento bajo presión.</p>
-                </div>
-                <div id="experience" class="section">
-                    <h2>Experiencia Laboral</h2>
-                    <p><strong>Química Marél / Jefe de ERP y Desarrollo</strong><br>
-                        Enero 2021 - Actualmente<br>
-                        - Encargado de implementación Odoo ERP<br>
-                        - Control de procesos<br>
-                        - Encargado de analizar y autorizar desarrollos<br>
-                        - Implementación de tableros inteligentes para análisis de datos<br>
-                        - Desarrollo e implementación de sistema administrativo a la medida<br>
-                        - Revisión de procesos en la empresa para su desarrollo en el software<br>
-                        - Capacitación de personal en software<br>
-                        - Manejo de datos y creación de queries para distintas áreas</p>
-                    <p><strong>Química Marél / Encargado de Soporte Técnico</strong><br>
-                        Junio 2018 - Enero 2021<br>
-                        - Encargado de mantenimiento preventivo y correctivo de equipos de la empresa locales y foráneos.<br>
-                        - Seguimiento de reportes por asignación<br>
-                        - Cotización de equipos de computo y hardware<br>
-                        - Procedimientos ISO 9000:2015<br>
-                        - Apoyo en inventario Mensual<br>
-                        - Soporte a los usuarios de la planta<br>
-                        - Reparación de equipos<br>
-                        - Cableado estructurado e Instalación de CCTV<br>
-                        - Capacitación a usuarios</p>
-                </div>
-                <div id="education" class="section">
-                    <h2>Educación</h2>
-                    <p><strong>Data Scientist / Ingeniería en Ciencia de Datos</strong><br>
-                        Ingenieria (Universidad del Valle de México)</p>
+        </div>
+    </nav>
+    
+    <header class="hero-section fade-in">
+        <div class="hero-content">
+            <img src="img/joel.jpeg" alt="Foto de perfil">
+            <h1>Joel Sánchez León</h1>
+            <p>Fullstack Developer & Data Scientist</p>
+             <!-- Iconos de redes sociales -->
+             <div class="social-icons">
+                <a href="https://www.instagram.com/joebox18" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tu_usuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about" class="about-section fade-in-up">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Manejo de base de datos. Gran rendimiento bajo presión. Con más de 9 años de experiencia, soy analista, comprometido, responsable, busco siempre la motivación para seguir el desarrollo intelectual y profesional.</p>
+        </div>
+    </section>
+    
+    <section id="experience" class="experience-section fade-in-left">
+        <div class="container">
+            <h2>Experiencia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Química Marél / Jefe de ERP y Desarrollo</h4>
+                    <span>Enero 2021 - Actualmente</span>
                     <ul>
-                        <li>- Master En Coding - Fullstack DEV.F (Diploma)</li>
-                        <li>- Curso PHP (Diploma)</li>
-                        <li>- Curso Básico de Seguridad Informática para Empresas. (Diploma)</li>
-                        <li>- Curso Básico de Manejo de Datos en Laravel con Eloquent ORM. (Diploma)</li>
-                        <li>- Certificación Gaming Systems por Intel (certificado)</li>
+                        <li>Encargado de implementación Odoo ERP</li>
+                        <li>Control de procesos</li>
+                        <li>Encargado de analizar y autorizar desarrollos</li>
+                        <li>Implementación de tableros inteligentes para análisis de datos</li>
+                        <li>Desarrollo e implementación de sistema administrativo a la medida</li>
+                        <li>Revisión de procesos en la empresa para su desarrollo en el software</li>
+                        <li>Capacitación de personal en software</li>
+                        <li>Manejo de datos y creación de queries para distintas áreas</li>
                     </ul>
                 </div>
-                <div id="skills" class="section">
-                    <h2>Habilidades</h2>
-                    <ul class="skills-list">
-                        <li>Manejo de bases de datos</li>
-                        <li>Desarrollo web con PHP, JavaScript, Ajax, Python</li>
-                        <li>Soporte técnico y al usuario</li>
-                        <li>Diseño web</li>
+                <div class="timeline-item fade-in-right">
+                    <h4>Química Marél / Encargado de Soporte Técnico</h4>
+                    <span>Junio 2018 - Enero 2021</span>
+                    <ul>
+                        <li>Encargado de mantenimiento preventivo y correctivo de equipos de la empresa locales y foráneos</li>
+                        <li>Seguimiento de reportes por asignación</li>
+                        <li>Cotización de equipos de computo y hardware</li>
+                        <li>Procedimientos ISO 9000:2015</li>
+                        <li>Apoyo en inventario Mensual</li>
+                        <li>Soporte a los usuarios de la planta</li>
+                        <li>Reparación de equipos</li>
+                        <li>Cableado estructurado e Instalación de CCTV</li>
+                        <li>Capacitación a usuarios</li>
                     </ul>
-                </div>
-                <div id="languages" class="section">
-                    <h2>Idiomas</h2>
-                    <p>Español - nativo<br>
-                        Inglés - intermedio</p>
-                </div>
-                <div id="badges" class="section">
-                    <h2>Badges</h2>
-                    <p>Aquí puedes mostrar tus badges o premios relevantes.</p>
-                </div>
-                <div class="text-right mt-4">
-                    <label class="switch">
-                        <input type="checkbox" id="toggle-lang-btn">
-                        <span class="slider"></span>
-                        <span class="switch-label">EN - ES</span>
-                    </label>
-                    <button id="toggle-theme-btn" class="btn btn-secondary ml-3">Cambiar Tema</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <section id="projects" class="projects-section fade-in">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4 fade-in-left">
+                    <div class="project-card card">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 1</h5>
+                            <p class="card-text">Descripción de proyecto destacado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in-up">
+                    <div class="project-card card">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">Descripción de proyecto destacado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in-right">
+                    <div class="project-card card">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Descripción de proyecto destacado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills-section fade-in">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="row">
+                <div class="col-md-4 fade-in-left">
+                    <div class="skill-card">
+                        <h4>Soporte Técnico</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in-up">
+                    <div class="skill-card">
+                        <h4>Diseño Web</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in-right">
+                    <div class="skill-card">
+                        <h4>Programación (PHP, JS, AJAX, Python)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section fade-in-up">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer fade-in">
+        <div class="container">
+            <p>&copy; 2023 Joel Sánchez León. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
-
 </html>
